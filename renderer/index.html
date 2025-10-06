@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palace Anonymizer - Herramienta de Anonimización</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado principal con logo de Palace -->
+    <header class="top-banner">
+        <div class="logo-container">
+            <img src="../palace.jpg" alt="Palace Logo" class="logo">
+            <h1>Palace Anonymizer</h1>
+        </div>
+        <div class="version-info">v1.0</div>
+    </header>
+
+    <!-- Contenedor principal de la aplicación -->
+    <div class="app-container">
+        <!-- Navegación por pestañas -->
+        <nav class="tab-navigation">
+            <button class="tab-button active" data-tab="files">
+                📂 Seleccionar archivos
+            </button>
+            <button class="tab-button" data-tab="config">
+                🛠 Configurar
+            </button>
+            <button class="tab-button" data-tab="results">
+                📄 Resultados
+            </button>
+            <button class="tab-button" data-tab="help">
+                ❓ Ayuda
+            </button>
+        </nav>
+
+        <!-- Contenido de las pestañas -->
+        <main class="tab-content">
+            <!-- Pestaña: Seleccionar archivos -->
+            <section id="files-tab" class="tab-pane active">
+                <div class="tab-header">
+                    <h2>Seleccionar Archivos para Anonimizar</h2>
+                    <p>Selecciona los archivos PDF, Excel o CSV que deseas anonimizar</p>
+                </div>
+
+                <!-- Área de carga de archivos separada -->
+                <div class="file-upload-section">
+                    <div class="upload-row">
+                        <!-- Documentos PDF -->
+                        <div class="upload-column">
+                            <h3>Documentos PDF</h3>
+                            <div class="file-upload-area" id="pdf-drop-zone">
+                                <div class="upload-icon">📁</div>
+                                <div class="upload-text">
+                                    <p><button class="link-button" id="select-pdf-folder-btn">Seleccionar carpeta</button></p>
+                                    <small>Carpeta con archivos PDF</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Archivos Excel/CSV -->
+                        <div class="upload-column">
+                            <h3>Archivos Excel/CSV</h3>
+                            <div class="file-upload-area" id="excel-drop-zone">
+                                <div class="upload-icon">📊</div>
+                                <div class="upload-text">
+                                    <p><button class="link-button" id="select-excel-files-btn">Seleccionar archivos</button></p>
+                                    <small>Archivos .xlsx o .csv</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lista de archivos seleccionados separada -->
+                <div class="selected-files-section">
+                    <div class="files-row">
+                        <!-- PDFs Seleccionados -->
+                        <div class="files-column">
+                            <h3>PDFs Seleccionados</h3>
+                            <div class="files-list" id="pdf-files-list">
+                                <div class="empty-state">No se han seleccionado documentos PDF</div>
+                            </div>
+                        </div>
+
+                        <!-- Excel/CSV Seleccionados -->
+                        <div class="files-column">
+                            <h3>Excel/CSV Seleccionados</h3>
+                            <div class="files-list" id="excel-files-list">
+                                <div class="empty-state">No se han seleccionado archivos Excel/CSV</div>
+                            </div>
+                            
+                            <!-- Selector de columnas -->
+                            <div class="column-selector-section" id="column-selector" style="display: none;">
+                                <h4>Columnas a Anonimizar</h4>
+                                <p class="column-help">Selecciona las columnas que contienen información sensible</p>
+                                <div class="columns-grid" id="columns-grid">
+                                    <!-- Las columnas se cargarán dinámicamente -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botones de acción -->
+                <div class="actions-section">
+                    <button class="secondary-button" id="clear-files-btn">Limpiar Lista</button>
+                    <button class="primary-button" id="next-to-config-btn" disabled>Continuar a Configuración</button>
+                </div>
+            </section>
+
+            <!-- Pestaña: Configurar -->
+            <section id="config-tab" class="tab-pane">
+                <div class="tab-header">
+                    <h2>Configuración de Mapeo</h2>
+                    <p>Gestiona las reglas de anonimización para contrapartes</p>
+                </div>
+
+                <!-- Tabla de configuración con controles -->
+                <div class="config-preview-section">
+                    <div class="config-header">
+                        <div class="config-status" id="config-status">
+                            <span class="status-indicator warning"></span>
+                            <span>Sin configuración (sesión segura)</span>
+                        </div>
+                        <div class="config-controls">
+                            <button class="secondary-button" id="set-default-dir-btn" title="Establecer directorio por defecto">📁</button>
+                            <button class="secondary-button" id="upload-config-btn" title="Subir archivo Excel">⬆️ Subir</button>
+                            <input type="file" id="config-file-input" accept=".xlsx,.csv" style="display: none;">
+                        </div>
+                    </div>
+                    <div class="config-table-container">
+                        <table class="config-table" id="config-preview-table">
+                            <thead>
+                                <tr>
+                                    <th>Nombre Legal Completo</th>
+                                    <th>Abreviaturas</th>
+                                    <th>RUT</th>
+                                    <th>LEI</th>
+                                    <th>Dirección</th>
+                                    <th>Pseudónimo</th>
+                                </tr>
+                            </thead>
+                            <tbody id="config-table-body">
+                                <tr class="empty-state">
+                                    <td colspan="6">No se ha cargado la configuración</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Pestaña: Resultados -->
+            <section id="results-tab" class="tab-pane">
+                <div class="tab-header">
+                    <h2>Procesamiento y Resultados</h2>
+                    <p>Procesa los archivos y revisa los resultados</p>
+                </div>
+
+                <!-- Panel de procesamiento -->
+                <div class="processing-section">
+                    <div class="process-card">
+                        <h3>Configuración de Salida</h3>
+                        <div class="output-options">
+                            <div class="form-group">
+                                <label>Carpeta de destino:</label>
+                                <div class="folder-selector">
+                                    <input type="text" id="output-folder" readonly placeholder="Seleccionar carpeta...">
+                                    <button class="secondary-button" id="select-output-btn">Examinar</button>
+                                </div>
+                            </div>
+                            <div class="checkbox-group">
+                                <label>
+                                    <input type="checkbox" id="create-zip-checkbox">
+                                    Comprimir todos los archivos en un .zip
+                                </label>
+                                <label>
+                                    <input type="checkbox" id="open-email-checkbox">
+                                    Preparar email con archivos adjuntos
+                                </label>
+                            </div>
+                        </div>
+                        <div class="process-actions">
+                            <button class="gradient-button" id="start-process-btn">Iniciar Anonimización</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel de progreso -->
+                <div class="progress-section" id="progress-section" style="display: none;">
+                    <div class="progress-card">
+                        <h3>Progreso del Procesamiento</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <div class="progress-status" id="progress-status">Preparando...</div>
+                        <div class="progress-details" id="progress-details"></div>
+                    </div>
+                </div>
+
+                <!-- Panel de resultados -->
+                <div class="results-section" id="results-section" style="display: none;">
+                    <h3>Resultados del Procesamiento</h3>
+                    <div class="results-summary" id="results-summary">
+                        <!-- Resumen dinámico -->
+                    </div>
+                    <div class="results-list" id="results-list">
+                        <!-- Lista detallada de resultados -->
+                    </div>
+                </div>
+
+                <!-- Botones de acción -->
+                <div class="actions-section">
+                    <button class="secondary-button" id="back-to-config-btn">Volver a Configuración</button>
+                    <button class="secondary-button" id="process-again-btn" style="display: none;">Procesar Otros Archivos</button>
+                </div>
+            </section>
+
+            <!-- Pestaña: Ayuda -->
+            <section id="help-tab" class="tab-pane">
+                <div class="tab-header">
+                    <h2>Ayuda y Documentación</h2>
+                    <p>Guía de uso de la herramienta de anonimización</p>
+                </div>
+
+                <div class="help-content">
+                    <div class="help-section">
+                        <h3>¿Cómo subir archivos?</h3>
+                        <p>Puedes subir archivos de las siguientes maneras:</p>
+                        <ul>
+                            <li><strong>Arrastrar y soltar:</strong> Arrastra los archivos desde tu explorador directamente al área de carga</li>
+                            <li><strong>Selección manual:</strong> Haz clic en "selecciona archivos" para abrir el explorador de archivos</li>
+                            <li><strong>Formatos soportados:</strong> PDF, Excel (.xlsx) y CSV</li>
+                        </ul>
+                    </div>
+
+                    <div class="help-section">
+                        <h3>¿Qué campos se requieren?</h3>
+                        <p>El archivo de configuración debe contener las siguientes columnas:</p>
+                        <ul>
+                            <li><strong>Nombre Legal Completo:</strong> Nombre completo de la contraparte</li>
+                            <li><strong>Abreviaturas:</strong> Lista separada por comas de alias o abreviaciones</li>
+                            <li><strong>RUT:</strong> Número de identificación tributaria (con o sin puntos)</li>
+                            <li><strong>LEI:</strong> Identificador de Entidad Legal</li>
+                            <li><strong>Pseudónimo:</strong> Nombre de reemplazo (obligatorio)</li>
+                        </ul>
+                    </div>
+
+                    <div class="help-section">
+                        <h3>¿Cómo editar la configuración?</h3>
+                        <ol>
+                            <li>Ve a la pestaña "Configurar"</li>
+                            <li>Haz clic en "Abrir Archivo de Configuración"</li>
+                            <li>Edita el archivo Excel con los datos de las contrapartes</li>
+                            <li>Guarda el archivo y haz clic en "Recargar"</li>
+                        </ol>
+                    </div>
+
+                    <div class="help-section">
+                        <h3>¿Qué hacer si hay errores?</h3>
+                        <ul>
+                            <li><strong>Archivo no reconocido:</strong> Verifica que el formato sea PDF, XLSX o CSV</li>
+                            <li><strong>Configuración inválida:</strong> Revisa que todas las filas tengan pseudónimos definidos</li>
+                            <li><strong>Identificadores faltantes:</strong> Agrega las contrapartes faltantes al archivo de configuración</li>
+                            <li><strong>Problemas de procesamiento:</strong> Revisa los logs en la carpeta de la aplicación</li>
+                        </ul>
+                    </div>
+
+                    <div class="help-section">
+                        <h3>Sobre Palace Anonymizer</h3>
+                        <p>Esta herramienta ha sido desarrollada por Palace para permitir a los clientes bancarios anonimizar documentos confidenciales de manera segura y local.</p>
+                        <p><strong>Versión:</strong> 1.0.0<br>
+                        <strong>Desarrollado por:</strong> Palace<br>
+                        <strong>Soporte:</strong> Funcionamiento completamente offline</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="renderer.js"></script>
+</body>
+</html>

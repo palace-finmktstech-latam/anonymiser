@@ -1,0 +1,1542 @@
+[
+  {
+    "Contract-Level Fields": {
+      "Trade ID": "45298",
+      "This Party": "Banco ABC",
+      "Counterparty": "Citibank N.A., London Branch",
+      "Trade Date": "12-08-2022",
+      "Start Date": "17-08-2022",
+      "Termination Date": "17-08-2032",
+      "Settlement Type": "Non-Deliverable",
+      "Settlement Currency": "USD",
+      "Settlement FX Reference": "USD Obs",
+      "Settlement FX Lag": 0,
+      "Cashflow Calendar": "NY-SCL",
+      "Payment Calendar": "NY-SCL"
+    },
+    "Leg-Level Fields": {
+      "Leg 1": {
+        "Payer": "Citibank N.A., London Branch",
+        "Notional": 2000000,
+        "Currency": "USD",
+        "Rate": "USD-SOFR-RATE",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "",
+        "Payment Business Day Adjustment": "",
+        "Payment Offset": 2,
+        "Compounding": "Yes",
+        "Lookback": 0
+      },
+      "Leg 2": {
+        "Payer": "Banco ABC",
+        "Notional": 1760000000,
+        "Currency": "CLP",
+        "Rate": "ICP-CLP",
+        "Spread": "-0.900%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "",
+        "Payment Business Day Adjustment": "",
+        "Payment Offset": 2,
+        "Compounding": "No",
+        "Lookback": 0
+      }
+    }
+  },
+  {
+    "Contract-Level Fields": {
+      "Trade ID": "40044",
+      "This Party": "Banco ABC",
+      "Counterparty": "Citibank N.A., London Branch",
+      "Trade Date": "10-12-2021",
+      "Start Date": "14-12-2021",
+      "Termination Date": "01-06-2024",
+      "Settlement Type": "Non-Deliverable",
+      "Settlement Currency": "USD",
+      "Settlement FX Reference": "USD Obs",
+      "Settlement FX Lag": 0,
+      "Cashflow Calendar": "NY-SCL",
+      "Payment Calendar": "NY-SCL"
+    },
+    "Leg-Level Fields": {
+      "Leg 1": {
+        "Payer": "Banco ABC",
+        "Notional": 5000000000,
+        "Currency": "CLP",
+        "Rate": "5.090%",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "Semi-Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      },
+      "Leg 2": {
+        "Payer": "Citibank N.A., London Branch",
+        "Notional": 5000000000,
+        "Currency": "CLP",
+        "Rate": "ICP-CLP",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "Semi-Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      }
+    }
+  },
+  {
+    "Contract-Level Fields": {
+      "Trade ID": "40303",
+      "This Party": "Banco ABC",
+      "Counterparty": "Citibank N.A., London Branch",
+      "Trade Date": "09-02-2022",
+      "Start Date": "11-02-2022",
+      "Termination Date": "11-02-2024",
+      "Settlement Type": "Non-Deliverable",
+      "Settlement Currency": "USD",
+      "Settlement FX Reference": "USD Obs",
+      "Settlement FX Lag": 0,
+      "Cashflow Calendar": "NY-SCL",
+      "Payment Calendar": "NY-SCL"
+    },
+    "Leg-Level Fields": {
+      "Leg 1": {
+        "Payer": "Banco ABC",
+        "Notional": 8800000000,
+        "Currency": "CLP",
+        "Rate": "6.910%",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "Semi-Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      },
+      "Leg 2": {
+        "Payer": "Citibank N.A., London Branch",
+        "Notional": 8800000000,
+        "Currency": "CLP",
+        "Rate": "ICP-CLP",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "Semi-Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      }
+    }
+  },
+  {
+    "Contract-Level Fields": {
+      "Trade ID": "40590",
+      "This Party": "Banco ABC",
+      "Counterparty": "Citibank N.A., London Branch",
+      "Trade Date": "10-11-2021",
+      "Start Date": "12-11-2021",
+      "Termination Date": "01-03-2026",
+      "Settlement Type": "Non-Deliverable",
+      "Settlement Currency": "USD",
+      "Settlement FX Reference": "USD Obs",
+      "Settlement FX Lag": 0,
+      "Cashflow Calendar": "NY-SCL",
+      "Payment Calendar": "NY-SCL"
+    },
+    "Leg-Level Fields": {
+      "Leg 1": {
+        "Payer": "Banco ABC",
+        "Notional": 5000000000,
+        "Currency": "CLP",
+        "Rate": "4.850%",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "Semi-Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      },
+      "Leg 2": {
+        "Payer": "Citibank N.A., London Branch",
+        "Notional": 5000000000,
+        "Currency": "CLP",
+        "Rate": "ICP-CLP",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "Semi-Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      }
+    }
+  },
+  {
+    "Contract-Level Fields": {
+      "Trade ID": "41157",
+      "This Party": "Banco ABC",
+      "Counterparty": "Citibank N.A., London Branch",
+      "Trade Date": "11-08-2022",
+      "Start Date": "16-08-2022",
+      "Termination Date": "16-08-2032",
+      "Settlement Type": "Non-Deliverable",
+      "Settlement Currency": "USD",
+      "Settlement FX Reference": "USD Obs",
+      "Settlement FX Lag": 0,
+      "Cashflow Calendar": "NY-SCL",
+      "Payment Calendar": "NY-SCL"
+    },
+    "Leg-Level Fields": {
+      "Leg 1": {
+        "Payer": "Citibank N.A., London Branch",
+        "Notional": 1000000,
+        "Currency": "USD",
+        "Rate": "USD-SOFR-RATE",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "Semi-Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 2,
+        "Compounding": "Yes",
+        "Lookback": 0
+      },
+      "Leg 2": {
+        "Payer": "Banco ABC",
+        "Notional": 883500000,
+        "Currency": "CLP",
+        "Rate": "ICP-CLP",
+        "Spread": "-0.935%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "Semi-Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      }
+    }
+  },
+  {
+    "Contract-Level Fields": {
+      "Trade ID": "40001",
+      "This Party": "BANCO ABC",
+      "Counterparty": "Merrill Lynch International",
+      "Trade Date": "13-10-2021",
+      "Start Date": "15-10-2021",
+      "Termination Date": "01-03-2026",
+      "Settlement Type": "Non-Deliverable",
+      "Settlement Currency": "USD",
+      "Settlement FX Reference": "USD Obs",
+      "Settlement FX Lag": 0,
+      "Cashflow Calendar": "NY-SCL",
+      "Payment Calendar": "NY-SCL"
+    },
+    "Leg-Level Fields": {
+      "Leg 1": {
+        "Payer": "Banco ABC",
+        "Notional": 6000000000,
+        "Currency": "CLP",
+        "Rate": "5.610%",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "Semi-Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      },
+      "Leg 2": {
+        "Payer": "Merrill Lynch International",
+        "Notional": 6000000000,
+        "Currency": "CLP",
+        "Rate": "ICP-CLP",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "Semi-Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      }
+    }
+  },
+  {
+    "Contract-Level Fields": {
+      "Trade ID": "48810",
+      "This Party": "Banco ABC",
+      "Counterparty": "Merrill Lynch International",
+      "Trade Date": "03-06-2022",
+      "Start Date": "07-06-2022",
+      "Termination Date": "07-06-2032",
+      "Settlement Type": "Non-Deliverable",
+      "Settlement Currency": "USD",
+      "Settlement FX Reference": "USD Obs",
+      "Settlement FX Lag": 0,
+      "Cashflow Calendar": "NY-SCL",
+      "Payment Calendar": "NY-SCL"
+    },
+    "Leg-Level Fields": {
+      "Leg 1": {
+        "Payer": "Merrill Lynch International",
+        "Notional": 32640000000,
+        "Currency": "CLP",
+        "Rate": "ICP-CLP",
+        "Spread": "-0.280%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "Semi-Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 2,
+        "Compounding": "No",
+        "Lookback": 0
+      },
+      "Leg 2": {
+        "Payer": "Banco ABC",
+        "Notional": 40000000,
+        "Currency": "USD",
+        "Rate": "USD-SOFR-RATE",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "Semi-Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 2,
+        "Compounding": "No",
+        "Lookback": 0
+      }
+    }
+  },
+  {
+    "Contract-Level Fields": {
+      "Trade ID": "51934",
+      "This Party": "BANCO ABC",
+      "Counterparty": "Merrill Lynch International",
+      "Trade Date": "06-12-2023",
+      "Start Date": "07-12-2023",
+      "Termination Date": "01-08-2043",
+      "Settlement Type": "Non-Deliverable",
+      "Settlement Currency": "USD",
+      "Settlement FX Reference": "USD Obs",
+      "Settlement FX Lag": 0,
+      "Cashflow Calendar": "NY-SCL",
+      "Payment Calendar": "NY-SCL"
+    },
+    "Leg-Level Fields": {
+      "Leg 1": {
+        "Payer": "Banco ABC",
+        "Notional": 119999.35,
+        "Currency": "CLF",
+        "Rate": "1.985%",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Monthly",
+        "Coupon Business Day Adjustment": "No Adjustment",
+        "Business Day Convention": "",
+        "Payment Frequency": "Monthly",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      },
+      "Leg 2": {
+        "Payer": "Merrill Lynch International",
+        "Notional": 4391730288,
+        "Currency": "CLP",
+        "Rate": "ICP-CLP",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Monthly",
+        "Coupon Business Day Adjustment": "No Adjustment",
+        "Business Day Convention": "",
+        "Payment Frequency": "Monthly",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      }
+    }
+  },
+  {
+    "Contract-Level Fields": {
+      "Trade ID": "58181",
+      "This Party": "Banco ABC",
+      "Counterparty": "Merrill Lynch International",
+      "Trade Date": "06-12-2023",
+      "Start Date": "07-12-2023",
+      "Termination Date": "01-08-2043",
+      "Settlement Type": "Non-Deliverable",
+      "Settlement Currency": "USD",
+      "Settlement FX Reference": "USD Obs",
+      "Settlement FX Lag": 0,
+      "Cashflow Calendar": "NY-SCL",
+      "Payment Calendar": "NY-SCL"
+    },
+    "Leg-Level Fields": {
+      "Leg 1": {
+        "Payer": "Banco ABC",
+        "Notional": 119999.35,
+        "Currency": "CLF",
+        "Rate": "1.985%",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Monthly",
+        "Coupon Business Day Adjustment": "No Adjustment",
+        "Business Day Convention": "",
+        "Payment Frequency": "Monthly",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      },
+      "Leg 2": {
+        "Payer": "Merrill Lynch International",
+        "Notional": 4391730288,
+        "Currency": "CLP",
+        "Rate": "ICP-CLP",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Monthly",
+        "Coupon Business Day Adjustment": "No Adjustment",
+        "Business Day Convention": "",
+        "Payment Frequency": "Monthly",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      }
+    }
+  },
+  {
+    "Contract-Level Fields": {
+      "Trade ID": "52780",
+      "This Party": "Banco ABC",
+      "Counterparty": "Merrill Lynch International",
+      "Trade Date": "01-12-2022",
+      "Start Date": "05-12-2022",
+      "Termination Date": "05-08-2043",
+      "Settlement Type": "Non-Deliverable",
+      "Settlement Currency": "USD",
+      "Settlement FX Reference": "USD Obs",
+      "Settlement FX Lag": 0,
+      "Cashflow Calendar": "NY-SCL",
+      "Payment Calendar": "NY-SCL"
+    },
+    "Leg-Level Fields": {
+      "Leg 1": {
+        "Payer": "Banco ABC",
+        "Notional": 163576.16,
+        "Currency": "CLF",
+        "Rate": "1.600%",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Monthly",
+        "Coupon Business Day Adjustment": "No Adjustment",
+        "Business Day Convention": "",
+        "Payment Frequency": "Monthly",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      },
+      "Leg 2": {
+        "Payer": "Merrill Lynch International",
+        "Notional": 5699116131,
+        "Currency": "CLP",
+        "Rate": "ICP-CLP",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Monthly",
+        "Coupon Business Day Adjustment": "No Adjustment",
+        "Business Day Convention": "",
+        "Payment Frequency": "Monthly",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      }
+    }
+  },
+  {
+    "Contract-Level Fields": {
+      "Trade ID": "43977",
+      "This Party": "Banco ABC",
+      "Counterparty": "Banco Bilbao Vizcaya Argentaria, S.A.",
+      "Trade Date": "27-09-2022",
+      "Start Date": "29-09-2022",
+      "Termination Date": "29-09-2034",
+      "Settlement Type": "Non-Deliverable",
+      "Settlement Currency": "USD",
+      "Settlement FX Reference": "USD Obs",
+      "Settlement FX Lag": 0,
+      "Cashflow Calendar": "NY-SCL",
+      "Payment Calendar": "NY-SCL"
+    },
+    "Leg-Level Fields": {
+      "Leg 1": {
+        "Payer": "Banco Bilbao Vizcaya Argentaria, S.A.",
+        "Notional": 500000,
+        "Currency": "USD",
+        "Rate": "3.540%",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      },
+      "Leg 2": {
+        "Payer": "Banco ABC",
+        "Notional": 500000,
+        "Currency": "USD",
+        "Rate": "USD-SOFR-RATE",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "Yes",
+        "Lookback": 0
+      }
+    }
+  },
+  {
+    "Contract-Level Fields": {
+      "Trade ID": "51284",
+      "This Party": "Banco ABC",
+      "Counterparty": "Barclays Bank PLC",
+      "Trade Date": "19-07-2023",
+      "Start Date": "21-07-2023",
+      "Termination Date": "21-07-2024",
+      "Settlement Type": "Non-Deliverable",
+      "Settlement Currency": "USD",
+      "Settlement FX Reference": "USD Obs",
+      "Settlement FX Lag": 0,
+      "Cashflow Calendar": "NY-SCL",
+      "Payment Calendar": "NY-SCL"
+    },
+    "Leg-Level Fields": {
+      "Leg 1": {
+        "Payer": "Banco ABC",
+        "Notional": 21000000000,
+        "Currency": "CLP",
+        "Rate": "7.830%",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "Semi-Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      },
+      "Leg 2": {
+        "Payer": "Barclays Bank PLC",
+        "Notional": 21000000000,
+        "Currency": "CLP",
+        "Rate": "ICP-CLP",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "Semi-Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      }
+    }
+  },
+  {
+    "Contract-Level Fields": {
+      "Trade ID": "46129",
+      "This Party": "Banco ABC",
+      "Counterparty": "Banco Bilbao Vizcaya Argentaria, S.A.",
+      "Trade Date": "13-06-2022",
+      "Start Date": "15-06-2022",
+      "Termination Date": "15-06-2031",
+      "Settlement Type": "Non-Deliverable",
+      "Settlement Currency": "USD",
+      "Settlement FX Reference": "USD Obs",
+      "Settlement FX Lag": 0,
+      "Cashflow Calendar": "NY-SCL",
+      "Payment Calendar": "NY-SCL"
+    },
+    "Leg-Level Fields": {
+      "Leg 1": {
+        "Payer": "Banco ABC",
+        "Notional": 3300000,
+        "Currency": "USD",
+        "Rate": "USD-SOFR-RATE",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "Semi-Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      },
+      "Leg 2": {
+        "Payer": "Banco Bilbao Vizcaya Argentaria, S.A.",
+        "Notional": 2839650000,
+        "Currency": "CLP",
+        "Rate": "ICP-CLP",
+        "Spread": "-0.495%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "Semi-Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      }
+    }
+  },
+  {
+    "Contract-Level Fields": {
+      "Trade ID": "49925",
+      "This Party": "Banco ABC",
+      "Counterparty": "Banco Bilbao Vizcaya Argentaria, S.A.",
+      "Trade Date": "27-09-2022",
+      "Start Date": "29-09-2022",
+      "Termination Date": "29-09-2028",
+      "Settlement Type": "Non-Deliverable",
+      "Settlement Currency": "USD",
+      "Settlement FX Reference": "USD Obs",
+      "Settlement FX Lag": 0,
+      "Cashflow Calendar": "NY-SCL",
+      "Payment Calendar": "NY-SCL"
+    },
+    "Leg-Level Fields": {
+      "Leg 1": {
+        "Payer": "Banco Bilbao Vizcaya Argentaria, S.A.",
+        "Notional": 900000,
+        "Currency": "USD",
+        "Rate": "3.763%",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 2,
+        "Compounding": "No",
+        "Lookback": 0
+      },
+      "Leg 2": {
+        "Payer": "Banco ABC",
+        "Notional": 900000,
+        "Currency": "USD",
+        "Rate": "USD-SOFR-RATE",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "",
+        "Payment Frequency": "Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 2,
+        "Compounding": "No",
+        "Lookback": 0
+      }
+    }
+  },
+  {
+    "Contract-Level Fields": {
+      "Trade ID": "50323",
+      "This Party": "Banco ABC",
+      "Counterparty": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",
+      "Trade Date": "09-05-2023",
+      "Start Date": "11-05-2023",
+      "Termination Date": "01-06-2025",
+      "Settlement Type": "Non-Deliverable",
+      "Settlement Currency": "USD",
+      "Settlement FX Reference": "USD Obs",
+      "Settlement FX Lag": 0,
+      "Cashflow Calendar": "NY-SCL",
+      "Payment Calendar": "NY-SCL"
+    },
+    "Leg-Level Fields": {
+      "Leg 1": {
+        "Payer": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",
+        "Notional": 500000,
+        "Currency": "CLF",
+        "Rate": "3.750%",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "No Adjustment",
+        "Business Day Convention": "Modified Following",
+        "Payment Frequency": "Semi-Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      },
+      "Leg 2": {
+        "Payer": "Banco ABC",
+        "Notional": 17981660000,
+        "Currency": "CLP",
+        "Rate": "ICP-CLP",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "No Adjustment",
+        "Business Day Convention": "Modified Following",
+        "Payment Frequency": "Semi-Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      }
+    }
+  },
+  {
+    "Contract-Level Fields": {
+      "Trade ID": "45900",
+      "This Party": "Banco ABC",
+      "Counterparty": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",
+      "Trade Date": "03-06-2022",
+      "Start Date": "07-06-2022",
+      "Termination Date": "07-06-2026",
+      "Settlement Type": "Non-Deliverable",
+      "Settlement Currency": "USD",
+      "Settlement FX Reference": "USD Obs",
+      "Settlement FX Lag": 0,
+      "Cashflow Calendar": "NY-SCL",
+      "Payment Calendar": "NY-SCL"
+    },
+    "Leg-Level Fields": {
+      "Leg 1": {
+        "Payer": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",
+        "Notional": 26000000,
+        "Currency": "USD",
+        "Rate": "USD-SOFR-RATE",
+        "Spread": "0.000%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "Modified Following",
+        "Payment Frequency": "Semi-Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "Yes",
+        "Lookback": 0
+      },
+      "Leg 2": {
+        "Payer": "Banco ABC",
+        "Notional": 21216000000,
+        "Currency": "CLP",
+        "Rate": "ICP-CLP",
+        "Spread": "-0.500%",
+        "Date Basis": "Actual/360",
+        "Coupon Frequency": "Semi-Annually",
+        "Coupon Business Day Adjustment": "Modified Following",
+        "Business Day Convention": "Modified Following",
+        "Payment Frequency": "Semi-Annually",
+        "Payment Business Day Adjustment": "Modified Following",
+        "Payment Offset": 0,
+        "Compounding": "No",
+        "Lookback": 0
+      }
+    }
+  },
+  {
+      "Contract-Level Fields": {
+        "Trade ID": "41374",
+        "This Party": "Banco ABC",
+        "Counterparty": "Goldman Sachs Bank USA",
+        "Trade Date": "29-11-2022",
+        "Start Date": "01-12-2022",
+        "Termination Date": "05-08-2042",
+        "Settlement Type": "Non-Deliverable",
+        "Settlement Currency": "USD",
+        "Settlement FX Reference": "USD Obs",
+        "Settlement FX Lag": 0,
+        "Cashflow Calendar": "NY-SCL",
+        "Payment Calendar": "NY-SCL"
+      },
+      "Leg-Level Fields": {
+        "Leg 1": {
+          "Payer": "Goldman Sachs Bank USA",
+          "Notional": 8478918066,
+          "Currency": "CLP",
+          "Rate": "ICP-CLP",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Monthly",
+          "Coupon Business Day Adjustment": "No Adjustment",
+          "Business Day Convention": "Modified Following",
+          "Payment Frequency": "Monthly",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        },
+        "Leg 2": {
+          "Payer": "Banco ABC",
+          "Notional": 243605,
+          "Currency": "CLF",
+          "Rate": "1.855%",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Monthly",
+          "Coupon Business Day Adjustment": "No Adjustment",
+          "Business Day Convention": "Modified Following",
+          "Payment Frequency": "Monthly",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        }
+      }
+    },
+    {
+      "Contract-Level Fields": {
+        "Trade ID": "41920",
+        "This Party": "Banco ABC",
+        "Counterparty": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",
+        "Trade Date": "07-06-2022",
+        "Start Date": "08-06-2022",
+        "Termination Date": "02-01-2024",
+        "Settlement Type": "Non-Deliverable",
+        "Settlement Currency": "USD",
+        "Settlement FX Reference": "USD Obs",
+        "Settlement FX Lag": 0,
+        "Cashflow Calendar": "NY-SCL",
+        "Payment Calendar": "NY-SCL"
+      },
+      "Leg-Level Fields": {
+        "Leg 1": {
+          "Payer": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",
+          "Notional": 10900000000,
+          "Currency": "CLP",
+          "Rate": "9.180%",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Semi-Annually",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Business Day Convention": "Modified Following",
+          "Payment Frequency": "Semi-Annually",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        },
+        "Leg 2": {
+          "Payer": "Banco ABC",
+          "Notional": 10900000000,
+          "Currency": "CLP",
+          "Rate": "ICP-CLP",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Semi-Annually",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Business Day Convention": "Modified Following",
+          "Payment Frequency": "Semi-Annually",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        }
+      }
+    },
+    {
+      "Contract-Level Fields": {
+        "Trade ID": "49164",
+        "This Party": "Banco ABC",
+        "Counterparty": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",
+        "Trade Date": "03-06-2022",
+        "Start Date": "07-06-2022",
+        "Termination Date": "07-06-2029",
+        "Settlement Type": "Non-Deliverable",
+        "Settlement Currency": "USD",
+        "Settlement FX Reference": "USD Obs",
+        "Settlement FX Lag": 0,
+        "Cashflow Calendar": "NY-SCL",
+        "Payment Calendar": "NY-SCL"
+      },
+      "Leg-Level Fields": {
+        "Leg 1": {
+          "Payer": "Banco ABC",
+          "Notional": 26000000,
+          "Currency": "USD",
+          "Rate": "USD-SOFR-RATE",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Semi-Annually",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Business Day Convention": "Modified Following",
+          "Payment Frequency": "Semi-Annually",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        },
+        "Leg 2": {
+          "Payer": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",
+          "Notional": 21216000000,
+          "Currency": "CLP",
+          "Rate": "ICP-CLP",
+          "Spread": "-0.310%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Semi-Annually",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Business Day Convention": "Modified Following",
+          "Payment Frequency": "Semi-Annually",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        }
+      }
+    },
+    {
+      "Contract-Level Fields": {
+        "Trade ID": "59121",
+        "This Party": "Banco ABC",
+        "Counterparty": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",
+        "Trade Date": "26-09-2023",
+        "Start Date": "28-09-2023",
+        "Termination Date": "01-03-2026",
+        "Settlement Type": "Non-Deliverable",
+        "Settlement Currency": "USD",
+        "Settlement FX Reference": "USD Obs",
+        "Settlement FX Lag": 0,
+        "Cashflow Calendar": "NY-SCL",
+        "Payment Calendar": "NY-SCL"
+      },
+      "Leg-Level Fields": {
+        "Leg 1": {
+          "Payer": "Banco ABC",
+          "Notional": 580000,
+          "Currency": "CLF",
+          "Rate": "3.220%",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Semi-Annually",
+          "Coupon Business Day Adjustment": "No Adjustment",
+          "Business Day Convention": "Modified Following",
+          "Payment Frequency": "Semi-Annually",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        },
+        "Leg 2": {
+          "Payer": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",
+          "Notional": 20993163800,
+          "Currency": "CLP",
+          "Rate": "ICP-CLP",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Semi-Annually",
+          "Coupon Business Day Adjustment": "No Adjustment",
+          "Business Day Convention": "Modified Following",
+          "Payment Frequency": "Semi-Annually",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        }
+      }
+    },
+    {
+      "Contract-Level Fields": {
+        "Trade ID": "51295",
+        "This Party": "Banco ABC",
+        "Counterparty": "Barclays Bank PLC",
+        "Trade Date": "06-12-2023",
+        "Start Date": "07-12-2023",
+        "Termination Date": "28-05-2046",
+        "Settlement Type": "Non-Deliverable",
+        "Settlement Currency": "USD",
+        "Settlement FX Reference": "USD Obs",
+        "Settlement FX Lag": 0,
+        "Cashflow Calendar": "NY-SCL",
+        "Payment Calendar": "NY-SCL"
+      },
+      "Leg-Level Fields": {
+        "Leg 1": {
+          "Payer": "Banco ABC",
+          "Notional": 229309.49,
+          "Currency": "CLF",
+          "Rate": "1.905%",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Monthly",
+          "Coupon Business Day Adjustment": "Following",
+          "Business Day Convention": "Following",
+          "Payment Frequency": "Monthly",
+          "Payment Business Day Adjustment": "Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        },
+        "Leg 2": {
+          "Payer": "Barclays Bank PLC",
+          "Notional": 8392257341,
+          "Currency": "CLP",
+          "Rate": "ICP-CLP",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Monthly",
+          "Coupon Business Day Adjustment": "Following",
+          "Business Day Convention": "Following",
+          "Payment Frequency": "Monthly",
+          "Payment Business Day Adjustment": "Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        }
+      }
+    },
+    {
+      "Contract-Level Fields": {
+        "Trade ID":"53108",
+        "This Party": "Banco ABC",
+        "Counterparty": "Barclays Bank PLC",
+        "Trade Date": "24-07-2023",
+        "Start Date": "26-07-2023",
+        "Termination Date": "26-07-2025",
+        "Settlement Type": "Non-Deliverable",
+        "Settlement Currency": "USD",
+        "Settlement FX Reference": "USD Obs",
+        "Settlement FX Lag": 0,
+        "Cashflow Calendar": "NY-SCL",
+        "Payment Calendar": "NY-SCL"
+      },
+      "Leg-Level Fields": {
+        "Leg 1": {
+          "Payer": "Banco ABC",
+          "Notional": 2300000000,
+          "Currency": "CLP",
+          "Rate": "6.080%",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Semi-Annually",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Business Day Convention": "",
+          "Payment Frequency": "Semi-Annually",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        },
+        "Leg 2": {
+          "Payer": "Barclays Bank PLC",
+          "Notional": 2300000000,
+          "Currency": "CLP",
+          "Rate": "ICP-CLP",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Semi-Annually",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Business Day Convention": "",
+          "Payment Frequency": "Semi-Annually",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        }
+      }
+    },
+    {
+      "Contract-Level Fields": {
+        "Trade ID": "53190",
+        "This Party": "Banco ABC",
+        "Counterparty": "Barclays Bank PLC",
+        "Trade Date": "25-07-2023",
+        "Start Date": "27-07-2023",
+        "Termination Date": "27-07-2028",
+        "Settlement Type": "Non-Deliverable",
+        "Settlement Currency": "USD",
+        "Settlement FX Reference": "USD Obs",
+        "Settlement FX Lag": 0,
+        "Cashflow Calendar": "NY-SCL",
+        "Payment Calendar": "NY-SCL"
+      },
+      "Leg-Level Fields": {
+        "Leg 1": {
+          "Payer": "Banco ABC",
+          "Notional": 18800000000,
+          "Currency": "CLP",
+          "Rate": "5.165%",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Semi-Annually",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Business Day Convention": "",
+          "Payment Frequency": "Semi-Annually",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        },
+        "Leg 2": {
+          "Payer": "Barclays Bank PLC",
+          "Notional": 18800000000,
+          "Currency": "CLP",
+          "Rate": "ICP-CLP",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Semi-Annually",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Business Day Convention": "",
+          "Payment Frequency": "Semi-Annually",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        }
+      }
+    },
+    {
+      "Contract-Level Fields": {
+        "Trade ID": "53891",
+        "This Party": "Banco ABC",
+        "Counterparty": "Barclays Bank PLC",
+        "Trade Date": "18-07-2023",
+        "Start Date": "20-07-2023",
+        "Termination Date": "05-11-2043",
+        "Settlement Type": "Non-Deliverable",
+        "Settlement Currency": "USD",
+        "Settlement FX Reference": "USD Obs",
+        "Settlement FX Lag": 0,
+        "Cashflow Calendar": "NY-SCL",
+        "Payment Calendar": "NY-SCL"
+      },
+      "Leg-Level Fields": {
+        "Leg 1": {
+          "Payer": "Banco ABC",
+          "Notional": 106807.42,
+          "Currency": "CLF",
+          "Rate": "1.920%",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Monthly",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Business Day Convention": "No Adjustment",
+          "Payment Frequency": "Monthly",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        },
+        "Leg 2": {
+          "Payer": "Barclays Bank PLC",
+          "Notional": 3853041362,
+          "Currency": "CLP",
+          "Rate": "ICP-CLP",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Monthly",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Business Day Convention": "No Adjustment",
+          "Payment Frequency": "Monthly",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        }
+      }
+    },
+    {
+      "Contract-Level Fields": {
+        "Trade ID": "44801",
+        "This Party": "Banco ABC",
+        "Counterparty": "Goldman Sachs Bank USA",
+        "Trade Date": "26-08-2022",
+        "Start Date": "05-01-2023",
+        "Termination Date": "05-01-2043",
+        "Settlement Type": "Non-Deliverable",
+        "Settlement Currency": "USD",
+        "Settlement FX Reference": "USD Obs",
+        "Settlement FX Lag": 0,
+        "Cashflow Calendar": "NY-SCL",
+        "Payment Calendar": "NY-SCL"
+      },
+      "Leg-Level Fields": {
+        "Leg 1": {
+          "Payer": "Goldman Sachs Bank USA",
+          "Notional": 10694180710,
+          "Currency": "CLP",
+          "Rate": "ICP-CLP",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Monthly",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Business Day Convention": "Modified Following",
+          "Payment Frequency": "Monthly",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        },
+        "Leg 2": {
+          "Payer": "Banco ABC",
+          "Notional": 316764,
+          "Currency": "CLF",
+          "Rate": "1.750%",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Monthly",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Business Day Convention": "Modified Following",
+          "Payment Frequency": "Monthly",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        }
+      }
+    },
+    {
+      "Contract-Level Fields": {
+        "Trade ID": "58026",
+        "This Party": "Banco ABC",
+        "Counterparty": "Banco de Credito e Inversiones",
+        "Trade Date": "09-03-2023",
+        "Start Date": "13-03-2023",
+        "Termination Date": "13-03-2025",
+        "Settlement Type": "Non-Deliverable",
+        "Settlement Currency": "USD",
+        "Settlement FX Reference": "",
+        "Settlement FX Lag": 0,
+        "Cashflow Calendar": "NY-SCL",
+        "Payment Calendar": "NY-SCL"
+      },
+      "Leg-Level Fields": {
+        "Leg 1": {
+          "Payer": "Banco de Credito e Inversiones",
+          "Notional": 200000,
+          "Currency": "USD",
+          "Rate": "4.980%",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Semi-Annually",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Payment Frequency": "Semi-Annually",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        },
+        "Leg 2": {
+          "Payer": "Banco ABC",
+          "Notional": 200000,
+          "Currency": "USD",
+          "Rate": "USD-SOFR-RATE",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Semi-Annually",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Payment Frequency": "Semi-Annually",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "Yes",
+          "Lookback": 0
+        }
+      }
+    },
+    {
+      "Contract-Level Fields": {
+        "Trade ID": "38010",
+        "This Party": "Banco ABC",
+        "Counterparty": "Goldman Sachs Bank USA",
+        "Trade Date": "26-06-2020",
+        "Start Date": "01-07-2020",
+        "Termination Date": "01-07-2030",
+        "Settlement Type": "Non-Deliverable",
+        "Settlement Currency": "USD",
+        "Settlement FX Reference": "USD Obs",
+        "Settlement FX Lag": 0,
+        "Cashflow Calendar": "NY-SCL",
+        "Payment Calendar": "NY-SCL"
+      },
+      "Leg-Level Fields": {
+        "Leg 1": {
+          "Payer": "Goldman Sachs Bank USA",
+          "Notional": 2500000000,
+          "Currency": "CLP",
+          "Rate": "ICP-CLP",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Semi-Annually",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Payment Frequency": "Semi-Annually",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        },
+        "Leg 2": {
+          "Payer": "Banco ABC",
+          "Notional": 2500000000,
+          "Currency": "CLP",
+          "Rate": "2.075%",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Semi-Annually",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Payment Frequency": "Semi-Annually",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        }
+      }
+    },
+    {
+      "Contract-Level Fields": {
+        "Trade ID": "52038",
+        "This Party": "Banco ABC",
+        "Counterparty": "Goldman Sachs Bank USA",
+        "Trade Date": "25-07-2023",
+        "Start Date": "27-07-2023",
+        "Termination Date": "05-11-2043",
+        "Settlement Type": "Non-Deliverable",
+        "Settlement Currency": "USD",
+        "Settlement FX Reference": "USD Obs",
+        "Settlement FX Lag": 0,
+        "Cashflow Calendar": "NY-SCL",
+        "Payment Calendar": "NY-SCL"
+      },
+      "Leg-Level Fields": {
+        "Leg 1": {
+          "Payer": "Goldman Sachs Bank USA",
+          "Notional": 3011787049,
+          "Currency": "CLP",
+          "Rate": "ICP-CLP",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Monthly",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Business Day Convention": "Modified Following",
+          "Payment Frequency": "Monthly",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        },
+        "Leg 2": {
+          "Payer": "Banco ABC",
+          "Notional": 83514.55,
+          "Currency": "CLF",
+          "Rate": "2.065%",
+          "Spread": "0.000%",
+          "Date Basis": "30/360",
+          "Coupon Frequency": "Monthly",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Business Day Convention": "Modified Following",
+          "Payment Frequency": "Monthly",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        }
+      }
+    },
+    {
+      "Contract-Level Fields": {
+        "Trade ID": "53928",
+        "This Party": "Banco ABC",
+        "Counterparty": "Goldman Sachs Bank USA",
+        "Trade Date": "01-12-2022",
+        "Start Date": "05-12-2022",
+        "Termination Date": "05-09-2042",
+        "Settlement Type": "Non-Deliverable",
+        "Settlement Currency": "USD",
+        "Settlement FX Reference": "USD Obs",
+        "Settlement FX Lag": 0,
+        "Cashflow Calendar": "NY-SCL",
+        "Payment Calendar": "NY-SCL"
+      },
+      "Leg-Level Fields": {
+        "Leg 1": {
+          "Payer": "Goldman Sachs Bank USA",
+          "Notional": 2508534000,
+          "Currency": "CLP",
+          "Rate": "ICP-CLP",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Monthly",
+          "Coupon Business Day Adjustment": "No Adjustment",
+          "Payment Frequency": "Monthly",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        },
+        "Leg 2": {
+          "Payer": "Banco ABC",
+          "Notional": 72000,
+          "Currency": "CLF",
+          "Rate": "1.750%",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Monthly",
+          "Coupon Business Day Adjustment": "No Adjustment",
+          "Payment Frequency": "Monthly",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        }
+      }
+    },
+    {
+      "Contract-Level Fields": {
+        "Trade ID": "52180",
+        "This Party": "Banco ABC",
+        "Counterparty": "MORGAN STANLEY CAPITAL SERVICES LLC",
+        "Trade Date": "03-03-2023",
+        "Start Date": "07-03-2023",
+        "Termination Date": "30-03-2024",
+        "Settlement Type": "Non-Deliverable",
+        "Settlement Currency": "USD",
+        "Settlement FX Reference": "USD Obs",
+        "Settlement FX Lag": 0,
+        "Cashflow Calendar": "NY-SCL",
+        "Payment Calendar": "NY-SCL"
+      },
+      "Leg-Level Fields": {
+        "Leg 1": {
+          "Payer": "MORGAN STANLEY CAPITAL SERVICES LLC",
+          "Notional": 42000000000,
+          "Currency": "CLP",
+          "Rate": "10.395%",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Payment Frequency": "",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        },
+        "Leg 2": {
+          "Payer": "Banco ABC",
+          "Notional": 42000000000,
+          "Currency": "CLP",
+          "Rate": "ICP-CLP",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Payment Frequency": "",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 0,
+          "Compounding": "No",
+          "Lookback": 0
+        }
+      }
+    },
+    {
+      "Contract-Level Fields": {
+        "Trade ID": "53092",
+        "This Party": "Banco ABC",
+        "Counterparty": "MORGAN STANLEY CAPITAL SERVICES LLC",
+        "Trade Date": "10-11-2023",
+        "Start Date": "14-11-2023",
+        "Termination Date": "14-11-2043",
+        "Settlement Type": "Non-Deliverable",
+        "Settlement Currency": "USD",
+        "Settlement FX Reference": "USD Obs",
+        "Settlement FX Lag": 0,
+        "Cashflow Calendar": "NY-SCL",
+        "Payment Calendar": "NY-SCL"
+      },
+      "Leg-Level Fields": {
+        "Leg 1": {
+          "Payer": "MORGAN STANLEY CAPITAL SERVICES LLC",
+          "Notional": 1740590000,
+          "Currency": "CLP",
+          "Rate": "ICP-CLP",
+          "Spread": "-0.470%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Semi-Annually",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Payment Frequency": "Semi-Annually",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 2,
+          "Compounding": "No",
+          "Lookback": 0
+        },
+        "Leg 2": {
+          "Payer": "Banco ABC",
+          "Notional": 1900000,
+          "Currency": "USD",
+          "Rate": "USD-SOFR-RATE",
+          "Spread": "0.000%",
+          "Date Basis": "Actual/360",
+          "Coupon Frequency": "Semi-Annually",
+          "Coupon Business Day Adjustment": "Modified Following",
+          "Payment Frequency": "Semi-Annually",
+          "Payment Business Day Adjustment": "Modified Following",
+          "Payment Offset": 2,
+          "Compounding": "Yes",
+          "Lookback": 0
+        }
+      }
+    }
+]

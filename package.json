@@ -1,0 +1,49 @@
+{
+  "name": "palace-anonymizer",
+  "version": "1.0.0",
+  "description": "Palace Anonymizer Tool - Herramienta para anonimizar documentos bancarios confidenciales",
+  "main": "main.js",
+  "author": "Palace",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder",
+    "pack": "electron-builder --dir"
+  },
+  "dependencies": {
+    "archiver": "^5.3.1",
+    "canvas": "^3.2.0",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^1.1.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-builder": "^24.6.4"
+  },
+  "build": {
+    "appId": "com.palace.anonymizer",
+    "productName": "Palace Anonymizer",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!dist/**/*",
+      "!node_modules/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "favicon.jpg"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "favicon.jpg"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "favicon.jpg"
+    }
+  }
+}
