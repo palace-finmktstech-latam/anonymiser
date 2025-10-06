@@ -71,17 +71,23 @@ document.addEventListener('DOMContentLoaded', function() {
 function initializeTabNavigation() {
   const tabButtons = document.querySelectorAll('.tab-button');
   const tabPanes = document.querySelectorAll('.tab-pane');
-  
+
   tabButtons.forEach(button => {
     button.addEventListener('click', function() {
       const targetTab = this.getAttribute('data-tab');
       switchTab(targetTab);
     });
   });
-  
-  // Botones de navegación entre pestañas
+
+  // Botones de navegación entre pestañas (old)
   document.getElementById('next-to-config-btn')?.addEventListener('click', () => switchTab('config'));
   document.getElementById('back-to-config-btn')?.addEventListener('click', () => switchTab('config'));
+
+  // New navigation buttons
+  document.getElementById('files-next-btn')?.addEventListener('click', () => switchTab('config'));
+  document.getElementById('config-prev-btn')?.addEventListener('click', () => switchTab('files'));
+  document.getElementById('config-next-btn')?.addEventListener('click', () => switchTab('results'));
+  document.getElementById('results-prev-btn')?.addEventListener('click', () => switchTab('config'));
 }
 
 function switchTab(tabName) {
@@ -117,27 +123,25 @@ function switchTab(tabName) {
 function initializeFileHandling() {
   const pdfDropZone = document.getElementById('pdf-drop-zone');
   const excelDropZone = document.getElementById('excel-drop-zone');
-  const selectPdfBtn = document.getElementById('select-pdf-folder-btn');
-  const selectExcelBtn = document.getElementById('select-excel-files-btn');
   const clearFilesBtn = document.getElementById('clear-files-btn');
-  
+
   // PDF Drag & Drop
   pdfDropZone.addEventListener('dragover', (e) => handleDragOver(e, 'pdf'));
   pdfDropZone.addEventListener('dragleave', (e) => handleDragLeave(e, 'pdf'));
   pdfDropZone.addEventListener('drop', (e) => handleDrop(e, 'pdf'));
-  
+
   // Excel Drag & Drop
   excelDropZone.addEventListener('dragover', (e) => handleDragOver(e, 'excel'));
   excelDropZone.addEventListener('dragleave', (e) => handleDragLeave(e, 'excel'));
   excelDropZone.addEventListener('drop', (e) => handleDrop(e, 'excel'));
-  
-  // Selección manual
-  selectPdfBtn.addEventListener('click', selectPdfFolder);
-  selectExcelBtn.addEventListener('click', selectExcelFiles);
-  
+
+  // Make entire drop zones clickable
+  pdfDropZone.addEventListener('click', selectPdfFolder);
+  excelDropZone.addEventListener('click', selectExcelFiles);
+
   // Limpiar listas
   clearFilesBtn.addEventListener('click', clearAllFiles);
-  
+
   // Event delegation for dynamically created remove buttons
   document.addEventListener('click', function(event) {
     if (event.target.classList.contains('remove-file-btn')) {
@@ -668,13 +672,9 @@ function initializeResultsTab() {
   // Validar que hay archivos y configuración
   const startButton = document.getElementById('start-process-btn');
   const isReady = (selectedPdfFiles.length > 0 || selectedExcelFiles.length > 0) && currentConfig && currentConfig.length > 0;
-  
+
   if (startButton) {
     startButton.disabled = !isReady;
-  }
-  
-  if (!isReady) {
-    showNotification(messages.warning, 'Selecciona archivos y carga la configuración antes de procesar', 'warning');
   }
 }
 
@@ -693,53 +693,51 @@ async function selectOutputFolder() {
 
 async function startProcessing() {
   const outputFolder = document.getElementById('output-folder').value;
-  const createZip = document.getElementById('create-zip-checkbox').checked;
-  const openEmail = document.getElementById('open-email-checkbox').checked;
-  
+
   if (!outputFolder) {
     showNotification(messages.warning, messages.selectOutputFolder, 'warning');
     return;
   }
-  
+
   if (!currentConfig) {
     showNotification(messages.warning, messages.noConfigLoaded, 'warning');
     return;
   }
-  
+
   // Mostrar panel de progreso
   const progressSection = document.getElementById('progress-section');
   progressSection.style.display = 'block';
-  
+
   try {
-    await processFiles(outputFolder, createZip, openEmail);
+    await processFiles(outputFolder);
   } catch (error) {
     console.error('Error durante el procesamiento:', error);
     showNotification(messages.error, messages.processError, 'error');
   }
 }
 
-async function processFiles(outputFolder, createZip, openEmail) {
+async function processFiles(outputFolder) {
   const progressFill = document.getElementById('progress-fill');
   const progressStatus = document.getElementById('progress-status');
   const progressDetails = document.getElementById('progress-details');
-  
+
   processingResults = [];
-  
+
   const allFiles = [...selectedPdfFiles, ...selectedExcelFiles];
-  
+
   for (let i = 0; i < allFiles.length; i++) {
     const file = allFiles[i];
     const progress = ((i + 1) / allFiles.length) * 100;
-    
+
     // Actualizar progreso
     progressFill.style.width = `${progress}%`;
     progressStatus.textContent = `Procesando ${file.name}...`;
     progressDetails.textContent = `Archivo ${i + 1} de ${allFiles.length}`;
-    
+
     try {
       // Simular procesamiento del archivo
       await new Promise(resolve => setTimeout(resolve, 1000));
-      
+
       const result = await processFile(file, outputFolder);
       processingResults.push({
         file: file,
@@ -747,7 +745,7 @@ async function processFiles(outputFolder, createZip, openEmail) {
         outputPath: result.outputPath,
         error: result.error
       });
-      
+
     } catch (error) {
       processingResults.push({
         file: file,
@@ -756,23 +754,13 @@ async function processFiles(outputFolder, createZip, openEmail) {
       });
     }
   }
-  
+
   // Procesamiento completado
   progressStatus.textContent = messages.processComplete;
   progressDetails.textContent = `${processingResults.length} ${messages.filesProcessed}`;
-  
+
   // Mostrar resultados
   showResults();
-  
-  // Crear ZIP si está solicitado
-  if (createZip) {
-    await createZipFile(outputFolder);
-  }
-  
-  // Abrir email si está solicitado
-  if (openEmail) {
-    await prepareEmail(outputFolder, createZip);
-  }
 }
 
 async function processFile(file, outputFolder) {

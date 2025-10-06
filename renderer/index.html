@@ -11,7 +11,6 @@
     <header class="top-banner">
         <div class="logo-container">
             <img src="../palace.jpg" alt="Palace Logo" class="logo">
-            <h1>Palace Anonymizer</h1>
         </div>
         <div class="version-info">v1.0</div>
     </header>
@@ -29,15 +28,16 @@
             <button class="tab-button" data-tab="results">
                 📄 Resultados
             </button>
-            <button class="tab-button" data-tab="help">
-                ❓ Ayuda
-            </button>
         </nav>
 
         <!-- Contenido de las pestañas -->
         <main class="tab-content">
             <!-- Pestaña: Seleccionar archivos -->
             <section id="files-tab" class="tab-pane active">
+                <div class="tab-navigation-buttons">
+                    <button class="nav-button" id="files-prev-btn" disabled>← Anterior</button>
+                    <button class="nav-button" id="files-next-btn">Siguiente →</button>
+                </div>
                 <div class="tab-header">
                     <h2>Seleccionar Archivos para Anonimizar</h2>
                     <p>Selecciona los archivos PDF, Excel o CSV que deseas anonimizar</p>
@@ -49,10 +49,10 @@
                         <!-- Documentos PDF -->
                         <div class="upload-column">
                             <h3>Documentos PDF</h3>
-                            <div class="file-upload-area" id="pdf-drop-zone">
+                            <div class="file-upload-area clickable-area" id="pdf-drop-zone">
                                 <div class="upload-icon">📁</div>
                                 <div class="upload-text">
-                                    <p><button class="link-button" id="select-pdf-folder-btn">Seleccionar carpeta</button></p>
+                                    <p>Seleccionar carpeta</p>
                                     <small>Carpeta con archivos PDF</small>
                                 </div>
                             </div>
@@ -61,10 +61,10 @@
                         <!-- Archivos Excel/CSV -->
                         <div class="upload-column">
                             <h3>Archivos Excel/CSV</h3>
-                            <div class="file-upload-area" id="excel-drop-zone">
+                            <div class="file-upload-area clickable-area" id="excel-drop-zone">
                                 <div class="upload-icon">📊</div>
                                 <div class="upload-text">
-                                    <p><button class="link-button" id="select-excel-files-btn">Seleccionar archivos</button></p>
+                                    <p>Seleccionar archivos</p>
                                     <small>Archivos .xlsx o .csv</small>
                                 </div>
                             </div>
@@ -105,12 +105,15 @@
                 <!-- Botones de acción -->
                 <div class="actions-section">
                     <button class="secondary-button" id="clear-files-btn">Limpiar Lista</button>
-                    <button class="primary-button" id="next-to-config-btn" disabled>Continuar a Configuración</button>
                 </div>
             </section>
 
             <!-- Pestaña: Configurar -->
             <section id="config-tab" class="tab-pane">
+                <div class="tab-navigation-buttons">
+                    <button class="nav-button" id="config-prev-btn">← Anterior</button>
+                    <button class="nav-button" id="config-next-btn">Siguiente →</button>
+                </div>
                 <div class="tab-header">
                     <h2>Configuración de Mapeo</h2>
                     <p>Gestiona las reglas de anonimización para contrapartes</p>
@@ -124,7 +127,6 @@
                             <span>Sin configuración (sesión segura)</span>
                         </div>
                         <div class="config-controls">
-                            <button class="secondary-button" id="set-default-dir-btn" title="Establecer directorio por defecto">📁</button>
                             <button class="secondary-button" id="upload-config-btn" title="Subir archivo Excel">⬆️ Subir</button>
                             <input type="file" id="config-file-input" accept=".xlsx,.csv" style="display: none;">
                         </div>
@@ -154,6 +156,10 @@
 
             <!-- Pestaña: Resultados -->
             <section id="results-tab" class="tab-pane">
+                <div class="tab-navigation-buttons">
+                    <button class="nav-button" id="results-prev-btn">← Anterior</button>
+                    <button class="nav-button" id="results-next-btn" disabled>Siguiente →</button>
+                </div>
                 <div class="tab-header">
                     <h2>Procesamiento y Resultados</h2>
                     <p>Procesa los archivos y revisa los resultados</p>
@@ -170,16 +176,6 @@
                                     <input type="text" id="output-folder" readonly placeholder="Seleccionar carpeta...">
                                     <button class="secondary-button" id="select-output-btn">Examinar</button>
                                 </div>
-                            </div>
-                            <div class="checkbox-group">
-                                <label>
-                                    <input type="checkbox" id="create-zip-checkbox">
-                                    Comprimir todos los archivos en un .zip
-                                </label>
-                                <label>
-                                    <input type="checkbox" id="open-email-checkbox">
-                                    Preparar email con archivos adjuntos
-                                </label>
                             </div>
                         </div>
                         <div class="process-actions">
@@ -213,68 +209,7 @@
 
                 <!-- Botones de acción -->
                 <div class="actions-section">
-                    <button class="secondary-button" id="back-to-config-btn">Volver a Configuración</button>
                     <button class="secondary-button" id="process-again-btn" style="display: none;">Procesar Otros Archivos</button>
-                </div>
-            </section>
-
-            <!-- Pestaña: Ayuda -->
-            <section id="help-tab" class="tab-pane">
-                <div class="tab-header">
-                    <h2>Ayuda y Documentación</h2>
-                    <p>Guía de uso de la herramienta de anonimización</p>
-                </div>
-
-                <div class="help-content">
-                    <div class="help-section">
-                        <h3>¿Cómo subir archivos?</h3>
-                        <p>Puedes subir archivos de las siguientes maneras:</p>
-                        <ul>
-                            <li><strong>Arrastrar y soltar:</strong> Arrastra los archivos desde tu explorador directamente al área de carga</li>
-                            <li><strong>Selección manual:</strong> Haz clic en "selecciona archivos" para abrir el explorador de archivos</li>
-                            <li><strong>Formatos soportados:</strong> PDF, Excel (.xlsx) y CSV</li>
-                        </ul>
-                    </div>
-
-                    <div class="help-section">
-                        <h3>¿Qué campos se requieren?</h3>
-                        <p>El archivo de configuración debe contener las siguientes columnas:</p>
-                        <ul>
-                            <li><strong>Nombre Legal Completo:</strong> Nombre completo de la contraparte</li>
-                            <li><strong>Abreviaturas:</strong> Lista separada por comas de alias o abreviaciones</li>
-                            <li><strong>RUT:</strong> Número de identificación tributaria (con o sin puntos)</li>
-                            <li><strong>LEI:</strong> Identificador de Entidad Legal</li>
-                            <li><strong>Pseudónimo:</strong> Nombre de reemplazo (obligatorio)</li>
-                        </ul>
-                    </div>
-
-                    <div class="help-section">
-                        <h3>¿Cómo editar la configuración?</h3>
-                        <ol>
-                            <li>Ve a la pestaña "Configurar"</li>
-                            <li>Haz clic en "Abrir Archivo de Configuración"</li>
-                            <li>Edita el archivo Excel con los datos de las contrapartes</li>
-                            <li>Guarda el archivo y haz clic en "Recargar"</li>
-                        </ol>
-                    </div>
-
-                    <div class="help-section">
-                        <h3>¿Qué hacer si hay errores?</h3>
-                        <ul>
-                            <li><strong>Archivo no reconocido:</strong> Verifica que el formato sea PDF, XLSX o CSV</li>
-                            <li><strong>Configuración inválida:</strong> Revisa que todas las filas tengan pseudónimos definidos</li>
-                            <li><strong>Identificadores faltantes:</strong> Agrega las contrapartes faltantes al archivo de configuración</li>
-                            <li><strong>Problemas de procesamiento:</strong> Revisa los logs en la carpeta de la aplicación</li>
-                        </ul>
-                    </div>
-
-                    <div class="help-section">
-                        <h3>Sobre Palace Anonymizer</h3>
-                        <p>Esta herramienta ha sido desarrollada por Palace para permitir a los clientes bancarios anonimizar documentos confidenciales de manera segura y local.</p>
-                        <p><strong>Versión:</strong> 1.0.0<br>
-                        <strong>Desarrollado por:</strong> Palace<br>
-                        <strong>Soporte:</strong> Funcionamiento completamente offline</p>
-                    </div>
                 </div>
             </section>
         </main>

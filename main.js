@@ -9,6 +9,9 @@ const { PDFDocument } = require('pdf-lib');
 // Configuración de la aplicación
 let mainWindow;
 
+// Disable hardware acceleration to prevent GPU errors
+app.disableHardwareAcceleration();
+
 function createWindow() {
   // Crear la ventana principal del navegador
   mainWindow = new BrowserWindow({
@@ -22,7 +25,8 @@ function createWindow() {
       preload: path.join(__dirname, 'preload.js')
     },
     icon: path.join(__dirname, 'favicon.jpg'),
-    show: false
+    show: false,
+    autoHideMenuBar: true
   });
 
   // Cargar el archivo HTML de la aplicación
